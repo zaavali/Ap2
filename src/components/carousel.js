@@ -9,7 +9,7 @@ import bb from '../assets/basketballon.webp'
 
 
 const Carousel = () => {
-    const data = [   <img src={raquette} className="raquette"/>,<img src={rt} className="rt"/>,<img src={bt} className="bt"/>,,<img src={rb} className="rb"/>,<img src={v} className="v"/>,<img src={bb} className="bb"/>]
+    const data = [   <img src={raquette} className="raquet"/>,<img src={rt} className="rt"/>,<img src={bt} className="bt"/>,,<img src={rb} className="rb"/>,<img src={v} className="v"/>,<img src={bb} className="bb"/>]
     const [currentIndex, setCurrentIndex] = useState(0)
     const carouselInfiniteScroll = () => {
         if (currentIndex === DataTransfer.length-1){
