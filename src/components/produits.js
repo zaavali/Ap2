@@ -1,23 +1,21 @@
 import './produits.css'
-import raquette from '../assets/raquette.jpg'
-import balletennis from '../assets/balles tennis.jpg'
-import raquettetennis from '../assets/raquettetennis.jpg'
-import raquettebad from '../assets/raquette-badminton.jpg'
-import volants from '../assets/volants.jpg'
-import basketball from '../assets/basketballon.webp'
-import panier from '../assets/panier.png'
+
+
+
+
+
 
 function  Produits(){
 
     return (
         
         <div className="card"> 
-        <p><img src={raquette} className="raquette"/><span>2.00€</span><span className='addbtn'><img src={panier} className="panierbtn"/></span></p>
-        <p><img src={raquettetennis} className="raquettetennis"/><span>2.00€</span><span className='addbtn'><img src={panier} className="panierbtn"/></span></p>
-        <p><img src={balletennis} className="balletennis"/><span>2.00€</span><span className='addbtn'><img src={panier} className="panierbtn"/></span></p>
-        <p><img src={raquettebad} className="raquettebad"/><span>2.00€</span><span className='addbtn'><img src={panier} className="panierbtn"/></span></p>
-        <p><img src={volants} className="volants"/><span>2.00€</span><span className='addbtn'><img src={panier} className="panierbtn"/></span></p>
-        <p><img src={basketball} className="basketball"/><span>2.00€</span><span className='addbtn'><img src={panier} className="panierbtn"/></span></p>
+        <p><img src="/assets/raquette.jpg"className="raquette" alt=""/><span>2.00€</span><span className='addbtn'><img src="/assets/panier.png" className="panierbtn" alt=""/></span></p>
+        <p><img src="/assets/raquettetennis.jpg" className="raquettetennis" alt=""/><span>2.00€</span><span className='addbtn'><img src="/assets/panier.png" className="panierbtn" alt=""/></span></p>
+        <p><img src="/assets/balles tennis.jpg" className="balletennis" alt=""/><span>2.00€</span><span className='addbtn'><img src="/assets/panier.png" className="panierbtn" alt=""/></span></p>
+        <p><img src="/assets/raquette-badminton.jpg" className="raquettebad" alt=""/><span>2.00€</span><span className='addbtn'><img src="/assets/panier.png" className="panierbtn" alt=""/></span></p>
+        <p><img src="/assets/volants.jpg" className="volants" alt=""/><span>2.00€</span><span className='addbtn'><img src="/assets/panier.png" className="panierbtn" alt=""/></span></p>
+        <p><img src="/assets/basketballon.webp" className="basketball" alt=""/><span>2.00€</span><span className='addbtn'><img src="/assets/panier.png"className="panierbtn" alt=""/></span></p>
       
    
         

@@ -1,6 +1,6 @@
 import React from 'react';
 import'./body.css'
-import raquette from '../assets/raquette.jpg'
+
 
 function Body(){
     return (

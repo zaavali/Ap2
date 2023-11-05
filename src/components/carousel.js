@@ -1,36 +1,67 @@
 import './carousel.css'
-import React, { useEffect, useState} from 'react';
-import raquette from '../assets/raquette.jpg'
-import bt from '../assets/balles tennis.jpg'
-import rt from '../assets/raquettetennis.jpg'
-import rb from '../assets/raquette-badminton.jpg'
-import v from '../assets/volants.jpg'
-import bb from '../assets/basketballon.webp'
+import  { useEffect, useState} from 'react';
+
 
 
 const Carousel = () => {
-    const data = [   <img src={raquette} className="raquet"/>,<img src={rt} className="rt"/>,<img src={bt} className="bt"/>,,<img src={rb} className="rb"/>,<img src={v} className="v"/>,<img src={bb} className="bb"/>]
-    const [currentIndex, setCurrentIndex] = useState(0)
-    const carouselInfiniteScroll = () => {
-        if (currentIndex === DataTransfer.length-1){
-            return setCurrentIndex(0)
-        }
-        return setCurrentIndex(currentIndex+1)
-    }
+    
+  const data = [
+    {
+      src:"/assets/raquette.jpg",
+      className: "raquette",
+      alt :""
+    },
+    {
+      src: "/assets/raquettetennis.jpg",
+      className: "rt",
+      alt :""
+    },
+    {
+      src: "/assets/balles tennis.jpg",
+      className: "bt",
+      alt :""
+    },
+    {
+      src: "/assets/raquette-badminton.jpg",
+      className: "rb",
+      alt :""
+    },
+    
+    {
+      src: "/assets/volants.jpg",
+      className: "v",
+      alt :""
+    },
+    {
+      src: "/assets/basketballon.webp",
+      className: "bb",
+      alt :""
+    },
+  ]
+  const [currentIndex, setCurrentIndex] = useState(0)
+  useEffect(() => {
 
-    useEffect(()=> {
-        const interval = setInterval(() => {carouselInfiniteScroll()}, 3000)
+    const interval = setInterval(()=> setCurrentIndex((lastIdx) => (lastIdx + 1) % data.length), 3000)
 
-        return () =>(interval)})
+    return () => clearInterval(interval)
+}, [data.length])
 
-        return (
-            <div className='carousel-container'>
-                {data.map((item, index) => {
-                    return <h1 className='carousel-item'
-                    style={{transform: `translate(-${currentIndex * 100}%)`}}
-                    key={index}>{item}</h1>
-                })}
-            </div>
-        )
+
+
+
+return (
+  <div className='carousel-container'>
+     {data.map((item , index) => {
+  return    <img src={window.location.origin + item.src} className={'carousel-item'} alt={item.alt} style={{transform: `translate(-${currentIndex * 100}%)`}}
+  key={""}/>
+          })};
+          
+  </div>
+)      
+            
+
+           
+        
 }
+
 export default Carousel

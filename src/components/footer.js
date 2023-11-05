@@ -1,11 +1,11 @@
 import './footer.css'
 
-import { Link } from 'react-router-dom';
 
-import logo from'../assets/m2l.png'
 
-import fb from '../assets/fb.png'
-import x from '../assets/x.webp'
+
+
+
+
 
 
 function Footer({children}){
@@ -15,7 +15,7 @@ function Footer({children}){
           
     {children}
       
-    <img src={logo} className="img_film"/>
+    <img src="/assets/m2l.png" className="img_film" alt=""/>
    
   <ul>
     <li> <h3>Société</h3></li>
@@ -34,8 +34,8 @@ function Footer({children}){
  
   <ul>
     <li> <h3>Suivez nous</h3></li>
-    <li><img src={fb} className="fb"/></li>
-    <li><img src={x} className="x"/></li>
+    <li><img src="/assets/fb.png" className="fb" alt=""/></li>
+    <li><img src="/assets/x.webp" className="x" alt=""/></li>
  
 
   </ul>
