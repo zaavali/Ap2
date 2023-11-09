@@ -7,7 +7,7 @@ import Carousel from './components/carousel';
 import Produits from './components/produits';
 import Produitsh from './components/produitsh';
 import Produitsf from './components/produitsf';
-
+import Quiz from './components/bdd';
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
     <Produitsh/>
     <Produitsf/>
     <Produits/>
+    <Quiz/>
     <Footer/>
     </div>
   );
